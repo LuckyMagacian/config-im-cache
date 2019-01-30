@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${registry.host}:${registry.port}/eureka
+    fetch-registry: true
+
+
+  instance:
+    hostname: localhost
+    appname: im-cache
